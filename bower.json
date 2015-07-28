@@ -1,0 +1,26 @@
+{
+	"name": "angular-security",
+	"version": "1.0.0",
+	"authors": [
+		"francescobux@gmail.com"
+	],
+	"description": "AngularJs module for managing authentication and authorization",
+	"keywords": [
+		"angularjs",
+		"authentication",
+		"authen"
+	],
+	"license": "MIT",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"angular":"~1.2.0"
+	},
+	"devDependencies": {
+	}
+}
