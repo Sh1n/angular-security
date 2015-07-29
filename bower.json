@@ -4,6 +4,9 @@
 	"authors": [
 		"francescobux@gmail.com"
 	],
+	"main" : [
+		"js/security.min.js"
+	],
 	"description": "AngularJs module for managing authentication and authorization",
 	"keywords": [
 		"angularjs",
