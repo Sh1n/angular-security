@@ -35,14 +35,34 @@ var myController = myApp.controller('PageController', ['$scope', 'AuthService', 
 
 
 ## Artifacts
-TBA
-### (constant) AUTH_EVENTS
-TBA
-### (factory) Session
-TBA
-### (service) AuthService
-TBA
-### (controller) LoginFormController
-TBA
 
+### (constant) AUTH_EVENTS
+
+The module fires the following set of self-explainable events on the rootScope:
+
+* AUTH_EVENTS.loginSuccess
+* AUTH_EVENTS.loginFailed
+* AUTH_EVENTS.logoutSuccess
+* AUTH_EVENTS.sessionTimeout
+* AUTH_EVENTS.notAuthenticated
+* AUTH_EVENTS.notAuthorized
+
+
+### (factory) Session
+
+The Session object stores a minimum amount of data regarding the authenticated user:
+
+* userId
+* loginName
+* userRoles
+
+### (service) AuthService
+The AuthService can be used in your controllers to check for authentication and authorization. It can be achieved using two methods:
+
+* AuthService.isAuthenticated() evaluating true if the user is logged in, false otherwise.
+* AuthService.isAuthorized(requiredRole) evaluating to true if the intersection between the input parameter and the user roles is not empty. It accepts both an array of strings (role names) or a single string. See the above code for usage example.
+
+### (controller) LoginFormController
+
+Attach it to a form and put ng-submit="login()" as its attributes in order to quickly implement a login form. It needs to populate the credentials object with both identifier and password fields. See the example above.
 
