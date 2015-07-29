@@ -66,3 +66,9 @@ The AuthService can be used in your controllers to check for authentication and 
 
 Attach it to a form and put ng-submit="login()" as its attributes in order to quickly implement a login form. It needs to populate the credentials object with both identifier and password fields. See the example above.
 
+## License :
+
+The code is available at github [project][home] under [MIT licence][4].
+
+ [home]: https://github.com/Sh1n/angular-security
+ [4]: http://revolunet.mit-license.org
